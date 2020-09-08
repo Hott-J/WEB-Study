@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .js{ 
+                font-weight: bold;
+                color:red;
+            }
+            #first{
+                color:green
+            }
+            span{
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button"value="night"onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';">
+        <input type="button"value="day"onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black'">
+        <h1><a href="index.html">WEB</a></h1>
+        <h2 style="background-color: coral;color:powderblue">JavaScript</h2>
+        <p>
+            <span id="first" class="js">JavaScript</span><br>div는 어떠한 기능도 없다. css를 사용하기 위함. 근데 화면 전체를 쓰므로 줄바꿈이 됨. 그래서
+            전체를 사용하지 않는 span사용. .js는 클래스값이 js인 것. #first는 ID값이 first인것 가리킴.
+            클래스는 그루핑, ID는 식별하는 것. 클래스보다 ID가 우선시 됨. 둘이 중복시,
+            ID에 해당하는 style을 따른다. 클래스가 ID보다 포괄적인 것. 클래스로 광범위하게 설정 후,
+            예외처리를 ID값으로 한다. 아무것도 안붙이고 span으로 style주면, 모든 span 태그에 대해 적용.
+            태그 < 클래스 < ID 순으로 우선순위 적용
+        </p>
+    </body>
+</html>
